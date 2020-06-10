@@ -1,24 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min'
+import 'jquery';
+import 'popper.js';
 import './App.css';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+  } from "react-router-dom";
+
+import Header from './Header';
+import Nav from './Nav';
+import InteriorGallery from './InteriorGallery';
+import FloorPlans from './FloorPlans';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Router>
+            <Switch>
+                <Route exact path ="/">
+                    <Header />
+                    <Nav />
+                    <InteriorGallery />
+                    <div className="secondsection">
+                    <FloorPlans />
+                    </div>
+                </Route>
+            </Switch>
+        </Router>
     </div>
   );
 }
