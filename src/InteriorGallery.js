@@ -4,7 +4,7 @@ export default class InteriorGallery extends React.Component {
     render() {
         return (
             <div className="container mt-2 gallery">
-                <h2 className="display-4 text-center">Proffesional Office Space</h2>
+                <p className="title display-3 text-center text-dark">Proffesional Office Space</p>
                 <div id="carouselExampleControls" className="carousel slide testing" data-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active">

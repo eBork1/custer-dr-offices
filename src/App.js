@@ -8,30 +8,32 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-  } from "react-router-dom";
+} from "react-router-dom";
 
 import Header from './Header';
 import Nav from './Nav';
 import InteriorGallery from './InteriorGallery';
 import FloorPlans from './FloorPlans';
+import LandlordBlurb from './LandlordBlurb';
 
 function App() {
-  return (
-    <div className="App">
-        <Router>
-            <Switch>
-                <Route exact path ="/">
-                    <Header />
-                    <Nav />
-                    <InteriorGallery />
-                    <div className="secondsection">
-                    <FloorPlans />
-                    </div>
-                </Route>
-            </Switch>
-        </Router>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Router>
+                <Switch>
+                    <Route exact path="/">
+                        <Header />
+                        <Nav />
+                        <InteriorGallery />
+                        <div className="secondsection">
+                            <FloorPlans />
+                        </div>
+                        <LandlordBlurb />
+                    </Route>
+                </Switch>
+            </Router>
+        </div>
+    );
 }
 
 export default App;

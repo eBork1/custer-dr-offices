@@ -1,5 +1,11 @@
 .App {
     background-color: #f4f6ff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 .header {
